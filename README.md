@@ -19,7 +19,7 @@ Register the servlet in your `web.xml`
 
         <servlet>
           <servlet-name>SimpleRequestInspectorServlet</servlet-name>
-          <servlet-class>morscs.web.inspect.SimpleRequestInspectorServlet
+          <servlet-class>SimpleRequestInspectorServlet
           </servlet-class>
         </servlet>
         <servlet-mapping>

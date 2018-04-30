@@ -15,7 +15,7 @@
  *     See the License for the specific language governing permissions and
  *     limitations under the License.
  */
-package morscs.web.inspect;
+package com.morscs.web.inspect;
 
 import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;

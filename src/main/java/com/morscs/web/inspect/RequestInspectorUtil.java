@@ -16,7 +16,7 @@
  *     limitations under the License.
  */
 
-package morscs.web.inspect;
+package com.morscs.web.inspect;
 
 import java.security.Principal;
 import java.security.cert.X509Certificate;
