@@ -24,7 +24,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>inspect-request</artifactId>
   <groupId>com.morscs</groupId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -36,6 +36,7 @@
     <version.maven.source.plugin>3.0.1</version.maven.source.plugin>
     <version.maven.javadoc.plugin>3.0.0</version.maven.javadoc.plugin>
     <version.maven.gpg.plugin>1.6</version.maven.gpg.plugin>
+    <version.maven.git-commit-id.plugin>2.2.4</version.maven.git-commit-id.plugin>
     <version.maven.enunciate.plugin>2.1.1</version.maven.enunciate.plugin>
     <version.maven.dependency.plugin>2.10</version.maven.dependency.plugin>
     <version.maven.jxr.plugin>2.5</version.maven.jxr.plugin>
@@ -65,6 +66,28 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
+        <version>${version.maven.git-commit-id.plugin}</version>
+        <executions>
+          <execution>
+            <id>get-the-git-infos</id>
+            <goals>
+              <goal>revision</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>validate-the-git-infos</id>
+            <goals>
+              <goal>validateRevision</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <generateGitPropertiesFile>true</generateGitPropertiesFile>
+        </configuration>
+       </plugin>
+       <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>${version.maven.nexus-staging.plugin}</version>
