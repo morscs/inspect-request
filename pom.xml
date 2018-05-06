@@ -27,6 +27,37 @@
   <version>0.0.1</version>
   <packaging>jar</packaging>
 
+  <name>inspect-request</name>
+  <description>Simple helper for debugging request contents on the server side.</description>
+  <url>https://github.com/morscs/inspect-request</url>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/morscs/inspect-request.git</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>morbrian</id>
+      <name>Brian Moriarty</name>
+      <email>brian@morscs.com</email>
+      <url>https://github.com/morbrian</url>
+      <organization>Moriarty Software &amp; Consulting Services LLC</organization>
+      <organizationUrl>https://github.com/morscs</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>America/Los_Angeles</timezone>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.java>1.8</version.java>
