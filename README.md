@@ -9,7 +9,7 @@ reverse proxy configuration, the client request or the server layer.
 Include the library in your deployment (recommended for test environments only):
 
         <dependency>
-          <groupId>morscs.web</groupId>
+          <groupId>com.morscs</groupId>
           <artifactId>inspect-request</artifactId>
           <version>0.0.1</version>
           <packaging>jar</packaging>
